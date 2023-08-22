@@ -1,0 +1,32 @@
+{
+  "name": "RiskManagement",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/xsenv": "^4.0.0",
+    "@sap/xssec": "^3.3.3",
+    "express": "^4",
+    "hdb": "^0.19.5",
+    "passport": "^0.6.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.108.12"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/risks"
+  ],
+  "cds": {
+    "requires": {
+    }
+  }
+}
